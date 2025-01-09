@@ -34,7 +34,7 @@ def get_args_parser():
     parser.add_argument("--run_name", default="", type=str)
 
     # Dataset specific
-    parser.add_argument("--dataset_config", default=None, required=True)
+    parser.add_argument("--dataset_config", default=None, required=False)
     parser.add_argument("--do_qa", action="store_true", help="Whether to do question answering")
     parser.add_argument(
         "--predict_final",
